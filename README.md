@@ -12,13 +12,23 @@ too, e.g. in compilers).
 
 ## Building the Project
 
-To build the project, you need to have [Gradle 8.+](https://gradle.org) and [Java 11+](https://openjdk.java.net)
+To build the project, you need to have [Java 11+](https://openjdk.java.net)
 installed on your system. You can build the project by running the following
 command:
 
 ```shell
-gradle build
+./gradle/gradlew clean build
 ```
+
+Or if you have [Gradle 8.3.+](https://gradle.org) installed on your system
+you can run the following command:
+
+```shell
+gradle clean build
+```
+
+However, using Gradle directly is **dangerous** because you may not use the
+right version, it's preferable to use `gradlew`.
 
 After the build is complete, you can find the compiled JAR files in the
 corresponding `build/libs` directory of each submodule.
@@ -26,7 +36,7 @@ corresponding `build/libs` directory of each submodule.
 To run only the project tests, you can use the following command:
 
 ```shell
-gradle test
+./gradle/gradlew test
 ```
 
 ## How to Contribute
@@ -40,7 +50,7 @@ To avoid frustration, before sending us your pull request, please run a full
 Gradle build to ensure that your changes do not violate our quality standards:
 
 ```shell
-gradle build
+./gradle/gradlew clean build
 ```
 
 All submodules are checked
