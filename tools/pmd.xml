@@ -11,16 +11,16 @@
     <exclude name="AbstractClassWithoutAbstractMethod" />
     <!-- Does not work, too many false positives. -->
     <exclude name="AccessorMethodGeneration" />
-    <!-- Already covered with Checkstyle 'FinalParameters' rule. -->   
+    <!-- Already covered with Checkstyle 'FinalParameters' rule. -->
     <exclude name="AvoidReassigningParameters" />
     <!-- Used for legitimate purposes in some Writer classes. -->
     <exclude name="AvoidStringBufferField" />
     <!-- Not relevant for ASM. -->
     <exclude name="AvoidUsingHardCodedIP" />
     <exclude name="CheckResultSet" />
-    <!-- Already covered with Checkstyle 'InterfaceIsType' rule. -->   
+    <!-- Already covered with Checkstyle 'InterfaceIsType' rule. -->
     <exclude name="ConstantsInInterface" />
-    <!-- Already covered with Checkstyle 'DefaultComesLast' rule. -->   
+    <!-- Already covered with Checkstyle 'DefaultComesLast' rule. -->
     <exclude name="DefaultLabelNotLastInSwitchStmt" />
     <!-- Not relevant for ASM (no logging and using JUnit 5). -->
     <exclude name="GuardLogStatement" />
@@ -33,13 +33,13 @@
     <exclude name="JUnitTestContainsTooManyAsserts" />
     <!-- Not relevant for ASM (using JUnit 5). -->
     <exclude name="JUnitUseExpected" />
-    <!-- Already covered with Checkstyle 'IllegalType' rule. -->   
+    <!-- Already covered with Checkstyle 'IllegalType' rule. -->
     <exclude name="LooseCoupling" />
-    <!-- Already covered with google-java-format. -->   
+    <!-- Already covered with google-java-format. -->
     <exclude name="OneDeclarationPerLine" />
-    <!-- Actually not a best practice. -->   
+    <!-- Actually not a best practice. -->
     <exclude name="LiteralsFirstInComparisons" />
-    <!-- Already covered with Checkstyle 'MissingSwitchDefault' rule. -->   
+    <!-- Already covered with Checkstyle 'MissingSwitchDefault' rule. -->
     <exclude name="SwitchStmtsShouldHaveDefault" />
     <!-- Already covered with google-java-format. -->
     <exclude name="UnusedImports" />
@@ -49,14 +49,14 @@
   <rule ref="category/java/bestpractices.xml/ArrayIsStoredDirectly">
     <properties>
       <property name="violationSuppressXPath"
-          value="//MethodDeclaration[@Private='true' or 
+          value="//MethodDeclaration[@Private='true' or
               @PackagePrivate='true']" />
     </properties>
   </rule>
   <rule ref="category/java/bestpractices.xml/MethodReturnsInternalArray">
     <properties>
       <property name="violationSuppressXPath"
-          value="//MethodDeclaration[@Private='true' or 
+          value="//MethodDeclaration[@Private='true' or
               @PackagePrivate='true']" />
     </properties>
   </rule>
@@ -69,6 +69,8 @@
   <rule ref="category/java/errorprone.xml">
     <!-- Do not want this rule. -->
     <exclude name="AssignmentInOperand" />
+    <!-- Do not want this rule. -->
+    <exclude name="BeanMembersShouldSerialize" />
     <!-- Not relevant for ASM (no BigDecimal). -->
     <exclude name="AvoidDecimalLiteralsInBigDecimalConstructor" />
     <!-- Do not want these rules. -->
@@ -82,7 +84,7 @@
     <!-- Not relevant for ASM. -->
     <exclude name="DoNotHardCodeSDCard" />
     <exclude name="DontImportSun" />
-    <!-- Already covered with Checkstyle 'NoFinalizer' rule. -->   
+    <!-- Already covered with Checkstyle 'NoFinalizer' rule. -->
     <exclude name="FinalizeDoesNotCallSuperFinalize" />
     <exclude name="FinalizeOnlyCallsSuperFinalize" />
     <exclude name="FinalizeOverloaded" />
