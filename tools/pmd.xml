@@ -69,8 +69,6 @@
   <rule ref="category/java/errorprone.xml">
     <!-- Do not want this rule. -->
     <exclude name="AssignmentInOperand" />
-    <!-- Do not want this rule. -->
-    <exclude name="BeanMembersShouldSerialize" />
     <!-- Not relevant for ASM (no BigDecimal). -->
     <exclude name="AvoidDecimalLiteralsInBigDecimalConstructor" />
     <!-- Do not want these rules. -->
