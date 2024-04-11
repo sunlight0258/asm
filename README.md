@@ -20,16 +20,6 @@ command:
 ./gradle/gradlew clean build
 ```
 
-Or if you have [Gradle 8.3.+](https://gradle.org) installed on your system
-you can run the following command:
-
-```shell
-gradle clean build
-```
-
-However, using Gradle directly is **dangerous** because you may not use the
-right version, it's preferable to use `gradlew`.
-
 After the build is complete, you can find the compiled JAR files in the
 corresponding `build/libs` directory of each submodule.
 
@@ -43,10 +33,10 @@ To run only the project tests, you can use the following command:
 
 To contribute to the ASM project fork this repository
 on [GitLab](https://gitlab.ow2.org/asm/asm), make changes,
-then send us a pull request.
-We will review your changes and apply them to the `master`
-branch.
-To avoid frustration, before sending us your pull request, please run a full
+then send us
+a [merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html).
+We will review your changes and apply them to the `master` branch.
+To avoid frustration, before sending us your merge request, please run a full
 Gradle build to ensure that your changes do not violate our quality standards:
 
 ```shell
